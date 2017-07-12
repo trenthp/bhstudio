@@ -1,0 +1,163 @@
+/* Project 01
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+body.p01 {
+	/* background: #262C33;
+	border: 20px solid #EA9215; */
+	color: #000;
+
+	h5 {
+		margin-bottom: .5rem;
+	}
+
+	h6 {
+		margin-bottom: .5rem;
+	}
+
+	h5,
+	h6,
+	ul,
+	p {
+		font-family: $font-stack-secondary;
+	}
+
+
+
+	.icon {
+		background: #fff;
+		color: #000;
+
+		-webkit-transition: color background .3s;
+		-moz-transition: color background .3s;
+		-o-transition: color background .3s;
+		transition: color background .3s;
+		
+		&:hover {
+			background: #000;
+			color: #fff;
+		}
+	}
+
+	.branding {
+		background: url(../img/01bg.png) center no-repeat #efefef;
+		padding: 4em 3em 1em 1.5em;
+
+		span {
+			font-style: italic;
+		}
+	}
+
+	.web {
+		background: url(../img/02bg.png) center no-repeat #efefef;
+		padding: 4em 3em 1em 1.5em;
+
+		span {
+			font-style: italic;
+		}
+	}
+
+	.app {
+		background: url(../img/03bg.png) center no-repeat #efefef;
+		padding: 4em 3em 1em 1.5em;
+
+		span {
+			font-style: italic;
+		}
+	}
+
+	.datavis {
+		background: url(../img/04bg.png) center no-repeat #efefef;
+		padding: 4em 3em 1em 1.5em;
+
+		span {
+			font-style: italic;
+		}
+	}
+
+
+	nav a {
+		border-bottom: none;
+
+		&:hover {
+			background: none;
+			border-bottom: none;
+		}
+	}
+
+	nav .five {
+		margin-top: 1%;
+		text-align: right;
+	}
+
+	@media (max-width: 550px) {
+		nav,
+		nav .five {
+			text-align: center;
+			margin-bottom: 16px;
+		}
+	}
+
+	h1 {
+		color: #fff;
+	}
+
+
+
+		/* Article
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
+	article {
+	}
+
+	.article01 {
+		padding-top: 48px;
+		padding-bottom: 32px;
+
+		.nine img {
+			-webkit-box-shadow: 0 2px 5px rgba(0,0,0,.26);
+			-moz-box-shadow: 0 2px 5px rgba(0,0,0,.26);
+			box-shadow: 0 2px 5px rgba(0,0,0,.26);
+		}
+
+		p {
+			font-size: 2rem;
+		}
+
+		.section-description {
+			margin-bottom: 48px;
+			margin-right: auto;
+			margin-left: auto;
+			max-width: 60%;
+			text-align: center;
+
+			span {
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+		}
+
+		.approach,
+		.result {
+			margin-top: 48px;
+			margin-bottom: 48px;
+		}
+
+		.contributions {
+			margin-top: 64px;
+			margin-bottom: 32px;
+		}
+	}
+
+
+		/* Footer
+	–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+}
+
+
+
+
+
+
+
+
+
+
