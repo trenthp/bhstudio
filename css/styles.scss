@@ -7,7 +7,7 @@
 /* Global
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 body {
-	border: 10px solid #000;
+	border: 10px solid $color-dark;
 	font-family: 'Libre Baskerville', serif;
 	font-weight: 400;
 }
@@ -17,7 +17,7 @@ h2,
 h3,
 h4,
 h6 {
-	color: #000;
+	color: $color-dark;
 }
 
 h1 {
@@ -43,9 +43,9 @@ h5 {
 }
 
 a {
-	background: #fff;
-	border-bottom: 1px dotted #000;
-	color: #000;
+	background: $color-light;
+	border-bottom: 1px dotted $color-dark;
+	color: $color-dark;
 	text-decoration: none;
 
 	-webkit-transition: color background border-bottom .3s;
@@ -54,16 +54,8 @@ a {
 	transition: color background border-bottom .3s;
 
 	&:hover {
-		background: #000;
-		border-bottom: 1px dotted #000;
-		color: #000;
+		/*background: $color-dark;*/
+		border-bottom: 1px dotted $color-dark;
+		color: $color-highlight;
 	}
-}
-
-.link-dark {
-	color: #333;
-}
-
-.link-light {
-	color: #999;
 }

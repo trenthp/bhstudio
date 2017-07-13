@@ -3,10 +3,10 @@
 body.p01 {
 	/* background: #262C33;
 	border: 20px solid #EA9215; */
-	color: #000;
+	color: $color-dark;
 
 	h4 span {
-		color: #A5AFAD;
+		color: $color-medium;
 		font-family: $font-stack-secondary;
 		margin-left: 16px;
 	}
@@ -27,14 +27,14 @@ body.p01 {
 	}
 
 	article p {
-		color: #A5AFAD;
+		color: $color-medium;
 	}
 
 
 
 	.icon {
-		background: #fff;
-		color: #000;
+		background: $color-light;
+		color: $color-dark;
 
 		-webkit-transition: color background .3s;
 		-moz-transition: color background .3s;
@@ -42,8 +42,8 @@ body.p01 {
 		transition: color background .3s;
 		
 		&:hover {
-			background: #000;
-			color: #fff;
+			/*background: $color-dark;*/
+			color: $color-highlight;
 		}
 	}
 
@@ -125,7 +125,7 @@ body.p01 {
 	}
 
 	h1 {
-		color: #fff;
+		color: $color-light;
 	}
 
 
