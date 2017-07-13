@@ -164,15 +164,37 @@ body.p01 {
 
 		.approach,
 		.result {
-			margin-top: 48px;
-			margin-bottom: 48px;
+			margin-top: 40px;
+			margin-bottom: 40px;
 		}
 
 		.contributions {
 			margin-top: 64px;
 			margin-bottom: 32px;
 		}
+
+		@media (max-width: 1200px) {
+			.section-description {
+				min-width: 100%;
+			}
+			
+			.approach,
+			.result {
+				margin-top: 24px;
+				margin-bottom: 24px;
+			}
+		}
+
+		@media (max-width: 1200px) {
+			.approach,
+			.result {
+				margin-top: 8px;
+				margin-bottom: 8px;
+			}
+		}
 	}
+
+
 
 
 		/* Footer
@@ -181,13 +203,3 @@ body.p01 {
 		font-family: $font-stack-primary;
 	}
 }
-
-
-
-
-
-
-
-
-
-

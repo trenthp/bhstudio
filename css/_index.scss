@@ -78,7 +78,16 @@ a img {
     background-size: 100% 100%;
 } 
 
+.grid-row {
+	margin-top: 64px;
+}
 
+@media (max-width: 550px) {
+	.grid-row,
+	.grid-row-second {
+		margin-top: 40px;
+	}
+}
 
 
 

@@ -1154,6 +1154,13 @@ a img {
   width: 100%;
   background-size: 100% 100%; }
 
+.grid-row {
+  margin-top: 64px; }
+
+@media (max-width: 550px) {
+  .grid-row,
+  .grid-row-second {
+    margin-top: 40px; } }
 /* Footer
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 footer {
@@ -1312,11 +1319,23 @@ body.p01 {
         font-weight: 700; }
     body.p01 .article01 .approach,
     body.p01 .article01 .result {
-      margin-top: 48px;
-      margin-bottom: 48px; }
+      margin-top: 40px;
+      margin-bottom: 40px; }
     body.p01 .article01 .contributions {
       margin-top: 64px;
       margin-bottom: 32px; }
+    @media (max-width: 1200px) {
+      body.p01 .article01 .section-description {
+        min-width: 100%; }
+      body.p01 .article01 .approach,
+      body.p01 .article01 .result {
+        margin-top: 24px;
+        margin-bottom: 24px; } }
+    @media (max-width: 1200px) {
+      body.p01 .article01 .approach,
+      body.p01 .article01 .result {
+        margin-top: 8px;
+        margin-bottom: 8px; } }
   body.p01 footer p {
     font-family: "Libre Baskerville", serif; }
 
