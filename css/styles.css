@@ -1207,6 +1207,10 @@ body.p01 {
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
   	/* Footer
   –––––––––––––––––––––––––––––––––––––––––––––––––– */ }
+  body.p01 h4 span {
+    color: #A5AFAD;
+    font-family: "Karla", sans-serif;
+    margin-left: 16px; }
   body.p01 h5 {
     margin-bottom: .5rem; }
   body.p01 h6 {
@@ -1216,6 +1220,8 @@ body.p01 {
   body.p01 ul,
   body.p01 p {
     font-family: "Karla", sans-serif; }
+  body.p01 article p {
+    color: #A5AFAD; }
   body.p01 .icon {
     background: #fff;
     color: #000;
@@ -1227,24 +1233,34 @@ body.p01 {
       background: #000;
       color: #fff; }
   body.p01 .branding {
-    background: url(../img/01bg.png) center no-repeat #efefef;
+    background: url(../img/01bg.png) center no-repeat #555;
     padding: 4em 3em 1em 1.5em; }
     body.p01 .branding span {
       font-style: italic; }
   body.p01 .web {
-    background: url(../img/02bg.png) center no-repeat #efefef;
+    background: url(../img/02bg.png) center no-repeat #555;
     padding: 4em 3em 1em 1.5em; }
     body.p01 .web span {
       font-style: italic; }
   body.p01 .app {
-    background: url(../img/03bg.png) center no-repeat #efefef;
+    background: url(../img/03bg.png) center no-repeat #555;
     padding: 4em 3em 1em 1.5em; }
     body.p01 .app span {
       font-style: italic; }
   body.p01 .datavis {
-    background: url(../img/04bg.png) center no-repeat #efefef;
+    background: url(../img/04bg.png) center no-repeat #555;
     padding: 4em 3em 1em 1.5em; }
     body.p01 .datavis span {
+      font-style: italic; }
+  body.p01 .deepdive {
+    background: url(../img/05bg.png) center no-repeat #555;
+    padding: 4em 3em 1em 1.5em; }
+    body.p01 .deepdive span {
+      font-style: italic; }
+  body.p01 .about {
+    background: url(../img/06bg.png) center no-repeat #555;
+    padding: 4em 3em 1em 1.5em; }
+    body.p01 .about span {
       font-style: italic; }
   body.p01 nav a {
     border-bottom: none; }
@@ -1286,6 +1302,8 @@ body.p01 {
     body.p01 .article01 .contributions {
       margin-top: 64px;
       margin-bottom: 32px; }
+  body.p01 footer p {
+    font-family: "Libre Baskerville", serif; }
 
 /* Global
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

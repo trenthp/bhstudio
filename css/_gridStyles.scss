@@ -5,6 +5,12 @@ body.p01 {
 	border: 20px solid #EA9215; */
 	color: #000;
 
+	h4 span {
+		color: #A5AFAD;
+		font-family: $font-stack-secondary;
+		margin-left: 16px;
+	}
+
 	h5 {
 		margin-bottom: .5rem;
 	}
@@ -18,6 +24,10 @@ body.p01 {
 	ul,
 	p {
 		font-family: $font-stack-secondary;
+	}
+
+	article p {
+		color: #A5AFAD;
 	}
 
 
@@ -38,7 +48,7 @@ body.p01 {
 	}
 
 	.branding {
-		background: url(../img/01bg.png) center no-repeat #efefef;
+		background: url(../img/01bg.png) center no-repeat #555;
 		padding: 4em 3em 1em 1.5em;
 
 		span {
@@ -47,7 +57,7 @@ body.p01 {
 	}
 
 	.web {
-		background: url(../img/02bg.png) center no-repeat #efefef;
+		background: url(../img/02bg.png) center no-repeat #555;
 		padding: 4em 3em 1em 1.5em;
 
 		span {
@@ -56,7 +66,7 @@ body.p01 {
 	}
 
 	.app {
-		background: url(../img/03bg.png) center no-repeat #efefef;
+		background: url(../img/03bg.png) center no-repeat #555;
 		padding: 4em 3em 1em 1.5em;
 
 		span {
@@ -65,7 +75,25 @@ body.p01 {
 	}
 
 	.datavis {
-		background: url(../img/04bg.png) center no-repeat #efefef;
+		background: url(../img/04bg.png) center no-repeat #555;
+		padding: 4em 3em 1em 1.5em;
+
+		span {
+			font-style: italic;
+		}
+	}
+
+	.deepdive {
+		background: url(../img/05bg.png) center no-repeat #555;
+		padding: 4em 3em 1em 1.5em;
+
+		span {
+			font-style: italic;
+		}
+	}
+
+	.about {
+		background: url(../img/06bg.png) center no-repeat #555;
 		padding: 4em 3em 1em 1.5em;
 
 		span {
@@ -149,7 +177,9 @@ body.p01 {
 
 		/* Footer
 	–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
+	footer p {
+		font-family: $font-stack-primary;
+	}
 }
 
 
