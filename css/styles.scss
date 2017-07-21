@@ -1,5 +1,6 @@
 @import "_normalize";
 @import "_skeleton";
+@import "_featherlight";
 @import "_variables";
 @import "_index";
 @import "_gridStyles";
@@ -42,6 +43,11 @@ h5 {
 	margin-bottom: .5rem;
 }
 
+h6 {
+	font-family: $font-stack-secondary;
+	margin-bottom: .5rem;
+}
+
 a {
 	background: $color-light;
 	border-bottom: 1px dotted $color-dark;
@@ -58,4 +64,122 @@ a {
 		border-bottom: 1px dotted $color-dark;
 		color: $color-highlight;
 	}
+}
+
+
+	nav a {
+		border-bottom: none;
+
+		&:hover {
+			background: none;
+			border-bottom: none;
+		}
+	}
+
+	nav .five,
+	nav .two {
+		margin-top: 1%;
+		text-align: right;
+	}
+
+	@media (max-width: 550px) {
+		nav,
+		nav .five {
+			text-align: center;
+			margin-bottom: 16px;
+		}
+	}
+
+
+
+
+
+.contact-btn {
+	background-color: #fff;
+	text-decoration: none;
+}
+
+nav .one a {
+	border-bottom: none;
+}
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input:focus,
+textarea:focus,
+select:focus {
+	border: 1px solid $color-highlight;
+	outline: 0; 
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	display: inline-block;
+	height: 46px;
+	padding: 0 30px;
+	color: $color-highlight;
+	text-align: center;
+	font-family: $font-stack-secondary;
+	font-size: 1.5rem;
+	font-weight: 600;
+	line-height: 38px;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	width: 100%;
+	background-color: #fff;
+	border-radius: 0;
+	border: 1px solid $color-highlight;
+	cursor: pointer;
+	box-sizing: border-box;
+
+	-webkit-transition: color background .3s;
+	-moz-transition: color background .3s;
+	-o-transition: color background .3s;
+	transition: color background .3s;
+
+	&:hover {
+		background: $color-highlight;
+		border: none;
+		color: $color-light;
+	}
+}
+
+label,
+legend {
+	display: block;
+	margin-bottom: .5rem;
+	font-weight: normal; 
+}
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+	height: 38px;
+	padding: 6px 10px; /* The 6px vertically centers text on FF, ignored by Webkit */
+	background-color: #fff;
+	border: 1px solid #D1D1D1;
+	border-radius: 0;
+	box-shadow: none;
+	box-sizing: border-box; 
+}
+
+.thanks {
+	height: 100vh;
+	text-align: center;
 }

@@ -699,7 +699,8 @@ textarea {
 textarea {
   min-height: 65px;
   padding-top: 6px;
-  padding-bottom: 6px; }
+  padding-bottom: 6px;
+  background: #fff; }
 
 input[type="email"]:focus,
 input[type="number"]:focus,
@@ -1098,6 +1099,129 @@ there.
 .padding-left-8x {
   padding-left: 64px; }
 
+/**
+ * Featherlight – ultra slim jQuery lightbox
+ * Version 1.7.1 - http://noelboss.github.io/featherlight/
+ *
+ * Copyright 2017, Noël Raoul Bossart (http://www.noelboss.com)
+ * MIT Licensed.
+**/
+@media all {
+  .lightbox {
+    display: none; }
+
+  .featherlight {
+    display: none;
+    /* dimensions: spanning the background from edge to edge */
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2147483647;
+    /* z-index needs to be >= elements on the site. */
+    /* position: centering content */
+    text-align: center;
+    /* insures that the ::before pseudo element doesn't force wrap with fixed width content; */
+    white-space: nowrap;
+    /* styling */
+    cursor: pointer;
+    background: #333;
+    /* IE8 "hack" for nested featherlights */
+    background: transparent; }
+
+  /* support for nested featherlights. Does not work in IE8 (use JS to fix) */
+  .featherlight:last-of-type {
+    background: rgba(255, 255, 255, 0.97); }
+
+  .featherlight:before {
+    /* position: trick to center content vertically */
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+
+  .featherlight .featherlight-content {
+    /* make content container for positioned elements (close button) */
+    position: relative;
+    /* position: centering vertical and horizontal */
+    text-align: left;
+    margin-top: 6%;
+    display: inline-block;
+    /* dimensions: cut off images */
+    overflow: auto;
+    padding: 25px 25px 0;
+    border-bottom: 25px solid transparent;
+    /* dimensions: handling large content */
+    margin-left: 5%;
+    margin-right: 5%;
+    max-height: 95%;
+    width: 50%;
+    /* styling */
+    cursor: auto;
+    /* reset white-space wrapping */
+    white-space: normal; }
+
+  /* contains the content */
+  .featherlight .featherlight-inner {
+    /* make sure its visible */
+    display: block; }
+
+  .featherlight .featherlight-close-icon {
+    /* position: centering vertical and horizontal */
+    position: absolute;
+    z-index: 9999;
+    top: 0;
+    right: 0;
+    /* dimensions: 25px x 25px */
+    line-height: 25px;
+    width: 25px;
+    /* styling */
+    cursor: pointer;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #fff;
+    /* Set the background in case it overlaps the content */
+    background: rgba(255, 255, 255, 0.3);
+    color: #000;
+    border: none;
+    padding: 0; }
+
+  /* See http://stackoverflow.com/questions/16077341/how-to-reset-all-default-styles-of-the-html5-button-element */
+  .featherlight .featherlight-close-icon::-moz-focus-inner {
+    border: 0;
+    padding: 0; }
+
+  .featherlight .featherlight-image {
+    /* styling */
+    width: 100%; }
+
+  .featherlight-iframe .featherlight-content {
+    /* removed the border for image croping since iframe is edge to edge */
+    border-bottom: 0;
+    padding: 0;
+    -webkit-overflow-scrolling: touch;
+    overflow-y: scroll; }
+
+  .featherlight iframe {
+    /* styling */
+    border: none; }
+
+  .featherlight * {
+    /* See https://github.com/noelboss/featherlight/issues/42 */
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; } }
+/* handling phones and small screens */
+@media only screen and (max-width: 1024px) {
+  .featherlight .featherlight-content {
+    /* dimensions: maximize lightbox with for small screens */
+    margin-left: 0;
+    margin-right: 0;
+    max-height: 98%;
+    width: 90%;
+    padding: 10px 10px 0;
+    border-bottom: 10px solid transparent; } }
 /* Variables
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 /* Header
@@ -1127,7 +1251,7 @@ nav h2 a img {
   transition: border color .3s; }
   nav h2 a img:hover {
     border: none;
-    color: #ee4938; }
+    color: #DBA93A; }
 
 /* Grid Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1148,7 +1272,7 @@ a img {
   -o-transition: border .3s;
   transition: border .3s; }
   a img:hover {
-    border: 4px solid #ee4938; }
+    border: 4px solid #DBA93A; }
 
 .responsive-image {
   width: 100%;
@@ -1179,14 +1303,14 @@ footer {
     -o-transition: color .3s;
     transition: color .3s; }
     .contact a:hover {
-      border-bottom: 1px dotted #ee4938;
-      color: #ee4938; }
+      border-bottom: 1px dotted #DBA93A;
+      color: #DBA93A; }
 
 div.social a {
   border-bottom: none; }
 
 .icon {
-  color: #ababab;
+  color: #3a3a3a;
   display: inline-block;
   font-size: 24px;
   width: 1em;
@@ -1200,14 +1324,13 @@ div.social a {
   -o-transition: color .3s;
   transition: color .3s; }
   .icon:hover {
-    color: #ee4938; }
+    color: #DBA93A; }
   .icon:first-child {
     margin-right: 10px; }
   .icon:last-child {
     margin-left: 10px; }
 
 .icon.icon-logo {
-  color: #3a3a3a;
   margin-left: 0;
   margin-right: 0;
   width: 138px;
@@ -1217,7 +1340,7 @@ div.social a {
   -o-transition: color .3s;
   transition: color .3s; }
   .icon.icon-logo:hover {
-    color: #ee4938; }
+    color: #DBA93A; }
 
 /* Project 01
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1244,6 +1367,10 @@ body.p01 {
     font-family: "Karla", sans-serif; }
   body.p01 article p {
     color: #ababab; }
+  body.p01 .btn {
+    margin-right: 3rem; }
+  body.p01 .five .btn {
+    vertical-align: middle; }
   body.p01 .icon {
     background: #fff;
     color: #3a3a3a;
@@ -1253,7 +1380,7 @@ body.p01 {
     transition: color background .3s; }
     body.p01 .icon:hover {
       /*background: $color-dark;*/
-      color: #ee4938; }
+      color: #DBA93A; }
   body.p01 .branding {
     background: url(../img/01bg.png) center no-repeat #555;
     padding: 4em 3em 1em 1.5em; }
@@ -1284,19 +1411,6 @@ body.p01 {
     padding: 4em 3em 1em 1.5em; }
     body.p01 .about span {
       font-style: italic; }
-  body.p01 nav a {
-    border-bottom: none; }
-    body.p01 nav a:hover {
-      background: none;
-      border-bottom: none; }
-  body.p01 nav .five {
-    margin-top: 1%;
-    text-align: right; }
-  @media (max-width: 550px) {
-    body.p01 nav,
-    body.p01 nav .five {
-      text-align: center;
-      margin-bottom: 16px; } }
   body.p01 h1 {
     color: #fff; }
   body.p01 .article01 {
@@ -1367,6 +1481,10 @@ h5 {
   font-weight: 700;
   margin-bottom: .5rem; }
 
+h6 {
+  font-family: "Karla", sans-serif;
+  margin-bottom: .5rem; }
+
 a {
   background: #fff;
   border-bottom: 1px dotted #3a3a3a;
@@ -1379,6 +1497,107 @@ a {
   a:hover {
     /*background: $color-dark;*/
     border-bottom: 1px dotted #3a3a3a;
-    color: #ee4938; }
+    color: #DBA93A; }
+
+nav a {
+  border-bottom: none; }
+  nav a:hover {
+    background: none;
+    border-bottom: none; }
+
+nav .five,
+nav .two {
+  margin-top: 1%;
+  text-align: right; }
+
+@media (max-width: 550px) {
+  nav,
+  nav .five {
+    text-align: center;
+    margin-bottom: 16px; } }
+.contact-btn {
+  background-color: #fff;
+  text-decoration: none; }
+
+nav .one a {
+  border-bottom: none; }
+
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid #DBA93A;
+  outline: 0; }
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+  display: inline-block;
+  height: 46px;
+  padding: 0 30px;
+  color: #DBA93A;
+  text-align: center;
+  font-family: "Karla", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 0;
+  border: 1px solid #DBA93A;
+  cursor: pointer;
+  box-sizing: border-box;
+  -webkit-transition: color background .3s;
+  -moz-transition: color background .3s;
+  -o-transition: color background .3s;
+  transition: color background .3s; }
+  .button:hover,
+  button:hover,
+  input[type="submit"]:hover,
+  input[type="reset"]:hover,
+  input[type="button"]:hover {
+    background: #DBA93A;
+    border: none;
+    color: #fff; }
+
+label,
+legend {
+  display: block;
+  margin-bottom: .5rem;
+  font-weight: normal; }
+
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="text"],
+input[type="tel"],
+input[type="url"],
+input[type="password"],
+textarea,
+select {
+  height: 38px;
+  padding: 6px 10px;
+  /* The 6px vertically centers text on FF, ignored by Webkit */
+  background-color: #fff;
+  border: 1px solid #D1D1D1;
+  border-radius: 0;
+  box-shadow: none;
+  box-sizing: border-box; }
+
+.thanks {
+  height: 100vh;
+  text-align: center; }
 
 /*# sourceMappingURL=styles.css.map */

@@ -30,6 +30,13 @@ body.p01 {
 		color: $color-medium;
 	}
 
+	.btn {
+		margin-right: 3rem;	
+	}
+
+	.five .btn {
+		vertical-align: middle;
+	}
 
 
 	.icon {
@@ -102,27 +109,7 @@ body.p01 {
 	}
 
 
-	nav a {
-		border-bottom: none;
 
-		&:hover {
-			background: none;
-			border-bottom: none;
-		}
-	}
-
-	nav .five {
-		margin-top: 1%;
-		text-align: right;
-	}
-
-	@media (max-width: 550px) {
-		nav,
-		nav .five {
-			text-align: center;
-			margin-bottom: 16px;
-		}
-	}
 
 	h1 {
 		color: $color-light;
