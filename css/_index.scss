@@ -24,6 +24,10 @@ p {
 	font-size: 1.4rem;
 }
 
+nav h2 a {
+	background: none;
+}
+
 nav h2 a img {
 	border: none;
 	color: $color-dark;
@@ -39,6 +43,41 @@ nav h2 a img {
 		color: $color-highlight;
 	}
 
+}
+
+.landing {
+	background: url(../img/indexbg.png) center no-repeat #555;
+	padding: 1em 3em 1em 1.5em;
+
+	span {
+		font-style: italic;
+	}
+}
+
+.headernav a {
+	color: $color-light;
+
+	-webkit-transition: color .3s;
+	-moz-transition: color .3s;
+	-o-transition: color .3s;
+	transition: color .3s;
+
+	&:hover {
+		color: $color-highlight;
+	}
+}
+
+.headernav h4,
+.headernav h5 {
+	color: #fff;
+	font-weight: 400;
+	margin: auto;
+	text-align: center;
+}
+
+
+.headernav > svg.icon {
+	margin-left: 45px;
 }
 
 

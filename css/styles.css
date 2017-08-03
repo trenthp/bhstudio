@@ -1241,6 +1241,9 @@ nav {
 p {
   font-size: 1.4rem; }
 
+nav h2 a {
+  background: none; }
+
 nav h2 a img {
   border: none;
   color: #3a3a3a;
@@ -1252,6 +1255,31 @@ nav h2 a img {
   nav h2 a img:hover {
     border: none;
     color: #DBA93A; }
+
+.landing {
+  background: url(../img/indexbg.png) center no-repeat #555;
+  padding: 1em 3em 1em 1.5em; }
+  .landing span {
+    font-style: italic; }
+
+.headernav a {
+  color: #fff;
+  -webkit-transition: color .3s;
+  -moz-transition: color .3s;
+  -o-transition: color .3s;
+  transition: color .3s; }
+  .headernav a:hover {
+    color: #DBA93A; }
+
+.headernav h4,
+.headernav h5 {
+  color: #fff;
+  font-weight: 400;
+  margin: auto;
+  text-align: center; }
+
+.headernav > svg.icon {
+  margin-left: 45px; }
 
 /* Grid Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -1515,6 +1543,18 @@ nav .two {
   nav .five {
     text-align: center;
     margin-bottom: 16px; } }
+.btn {
+  background: none;
+  border: none;
+  color: #DBA93A;
+  padding: 8px 16px;
+  -webkit-transition: border .3s;
+  -moz-transition: border .3s;
+  -o-transition: border .3s;
+  transition: border .3s; }
+  .btn:hover {
+    border: 1px solid #DBA93A; }
+
 .contact-btn {
   background-color: #fff;
   text-decoration: none; }

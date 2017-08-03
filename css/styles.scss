@@ -90,7 +90,21 @@ a {
 		}
 	}
 
+.btn {
+	background: none;
+	border: none;
+	color: $color-highlight;
+	padding: 8px 16px;
 
+	-webkit-transition: border .3s;
+	-moz-transition: border .3s;
+	-o-transition: border .3s;
+	transition: border .3s;
+
+	&:hover {
+		border: 1px solid $color-highlight;
+	}
+}
 
 
 
