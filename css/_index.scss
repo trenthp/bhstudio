@@ -7,7 +7,6 @@ body {
 }
 
 nav {
-	margin: 1.5em 3em 0 1.5em;
 
 	h2 a {
 		border-bottom: none;
@@ -47,14 +46,42 @@ nav h2 a img {
 
 .landing {
 	background: url(../img/indexbg.png) center no-repeat #555;
-	padding: 1em 3em 1em 1.5em;
+	padding-top: 4em;
 
 	span {
 		font-style: italic;
 	}
 }
 
-.headernav a {
+header .landing {
+	text-align: center;
+}
+
+.cta {
+	margin-top: 32px;
+	margin-bottom: 64px;
+}
+
+.ctabtn .btn {
+	color: $color-light;
+	background: none;
+	border: 2px solid $color-light;
+	font-size: 1.25em;
+	padding: 12px 16px;
+
+	-webkit-transition: background color .3s;
+	-moz-transition: background color .3s;
+	-o-transition: background color .3s;
+	transition: background color .3s;
+
+	&:hover {
+		color: $color-highlight;
+	}
+}
+
+.headernav a h4,
+.headernav a h5,
+.icon.icon-diamond {
 	color: $color-light;
 
 	-webkit-transition: color .3s;
@@ -68,16 +95,27 @@ nav h2 a img {
 }
 
 .headernav h4,
-.headernav h5 {
+.headernav h5,
+.icon.icon-diamond {
 	color: #fff;
 	font-weight: 400;
 	margin: auto;
 	text-align: center;
 }
 
+.icon:last-child {
+	margin-left: none;
+}
 
-.headernav > svg.icon {
-	margin-left: 45px;
+.diamondnav {
+    margin-top: 64px;
+    margin-bottom: 48px;
+}
+
+@media (max-width: 1110px) {
+	.diamondnav {
+		display: none;
+	}
 }
 
 
@@ -143,8 +181,6 @@ footer {
 	padding-bottom: 8px;
 	text-align: center;
 
-
-
 	a {
 		border-bottom: 1px dotted $color-medium;
 		color: $color-medium;
@@ -161,6 +197,7 @@ footer {
 		}
 	}
 }
+
 
 div.social a {
 	border-bottom: none;
@@ -185,21 +222,14 @@ div.social a {
 	&:hover {
 		color: $color-highlight;
 	}
-
-	&:first-child {
-		margin-right: 10px;
-	}
-	
-	&:last-child {
-	  	margin-left: 10px;
-	}
 }
 
 .icon.icon-logo {
+	color: $color-light;
 	margin-left: 0;
 	margin-right: 0;
-	width: 138px;
-	height: 60px;
+	width: 276px;
+	height: 120px;
 
 	-webkit-transition: color .3s;
 	-moz-transition: color .3s;

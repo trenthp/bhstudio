@@ -1231,12 +1231,10 @@ body {
   /*border: 20px solid $color-dark;*/
   color: #3a3a3a; }
 
-nav {
-  margin: 1.5em 3em 0 1.5em; }
-  nav h2 a {
-    border-bottom: none; }
-    nav h2 a:hover {
-      border: none; }
+nav h2 a {
+  border-bottom: none; }
+  nav h2 a:hover {
+    border: none; }
 
 p {
   font-size: 1.4rem; }
@@ -1258,29 +1256,61 @@ nav h2 a img {
 
 .landing {
   background: url(../img/indexbg.png) center no-repeat #555;
-  padding: 1em 3em 1em 1.5em; }
+  padding-top: 4em; }
   .landing span {
     font-style: italic; }
 
-.headernav a {
+header .landing {
+  text-align: center; }
+
+.cta {
+  margin-top: 32px;
+  margin-bottom: 64px; }
+
+.ctabtn .btn {
+  color: #fff;
+  background: none;
+  border: 2px solid #fff;
+  font-size: 1.25em;
+  padding: 12px 16px;
+  -webkit-transition: background color .3s;
+  -moz-transition: background color .3s;
+  -o-transition: background color .3s;
+  transition: background color .3s; }
+  .ctabtn .btn:hover {
+    color: #DBA93A; }
+
+.headernav a h4,
+.headernav a h5,
+.icon.icon-diamond {
   color: #fff;
   -webkit-transition: color .3s;
   -moz-transition: color .3s;
   -o-transition: color .3s;
   transition: color .3s; }
-  .headernav a:hover {
+  .headernav a h4:hover,
+  .headernav a h5:hover,
+  .icon.icon-diamond:hover {
     color: #DBA93A; }
 
 .headernav h4,
-.headernav h5 {
+.headernav h5,
+.icon.icon-diamond {
   color: #fff;
   font-weight: 400;
   margin: auto;
   text-align: center; }
 
-.headernav > svg.icon {
-  margin-left: 45px; }
+.icon:last-child {
+  margin-left: none; }
 
+.diamondnav {
+  margin-top: 64px;
+  margin-bottom: 48px; }
+
+@media (max-width: 1110px) {
+  .diamondnav {
+    display: none; } }
 /* Grid Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h5 span {
@@ -1353,16 +1383,13 @@ div.social a {
   transition: color .3s; }
   .icon:hover {
     color: #DBA93A; }
-  .icon:first-child {
-    margin-right: 10px; }
-  .icon:last-child {
-    margin-left: 10px; }
 
 .icon.icon-logo {
+  color: #fff;
   margin-left: 0;
   margin-right: 0;
-  width: 138px;
-  height: 60px;
+  width: 276px;
+  height: 120px;
   -webkit-transition: color .3s;
   -moz-transition: color .3s;
   -o-transition: color .3s;
@@ -1393,12 +1420,32 @@ body.p01 {
   body.p01 ul,
   body.p01 p {
     font-family: "Karla", sans-serif; }
+  body.p01 nav {
+    margin: 1.5em 3em 0 1.5em; }
   body.p01 article p {
     color: #ababab; }
   body.p01 .btn {
     margin-right: 3rem; }
   body.p01 .five .btn {
     vertical-align: middle; }
+  body.p01 .icon {
+    color: #3a3a3a;
+    display: inline-block;
+    font-size: 24px;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+    vertical-align: middle;
+    -webkit-transition: color .3s;
+    -moz-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s; }
+    body.p01 .icon:hover {
+      color: #DBA93A; }
+    body.p01 .icon:first-child {
+      margin-right: 10px; }
+    body.p01 .icon:last-child {
+      margin-left: 10px; }
   body.p01 .icon {
     background: #fff;
     color: #3a3a3a;
@@ -1409,6 +1456,9 @@ body.p01 {
     body.p01 .icon:hover {
       /*background: $color-dark;*/
       color: #DBA93A; }
+  body.p01 .icon.icon-logo {
+    width: 138px;
+    height: 60px; }
   body.p01 .branding {
     background: url(../img/01bg.png) center no-repeat #555;
     padding: 4em 3em 1em 1.5em; }
@@ -1553,7 +1603,7 @@ nav .two {
   -o-transition: border .3s;
   transition: border .3s; }
   .btn:hover {
-    border: 1px solid #DBA93A; }
+    border: 2px solid #DBA93A; }
 
 .contact-btn {
   background-color: #fff;
@@ -1635,6 +1685,9 @@ select {
   border-radius: 0;
   box-shadow: none;
   box-sizing: border-box; }
+
+input[placeholder] {
+  color: #ababab; }
 
 .thanks {
   height: 100vh;

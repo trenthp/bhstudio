@@ -102,7 +102,7 @@ a {
 	transition: border .3s;
 
 	&:hover {
-		border: 1px solid $color-highlight;
+		border: 2px solid $color-highlight;
 	}
 }
 
@@ -191,6 +191,10 @@ select {
 	border-radius: 0;
 	box-shadow: none;
 	box-sizing: border-box; 
+}
+
+input[placeholder] {
+	color: $color-medium;
 }
 
 .thanks {

@@ -26,6 +26,10 @@ body.p01 {
 		font-family: $font-stack-secondary;
 	}
 
+	nav {
+		margin: 1.5em 3em 0 1.5em;
+	}
+
 	article p {
 		color: $color-medium;
 	}
@@ -36,6 +40,33 @@ body.p01 {
 
 	.five .btn {
 		vertical-align: middle;
+	}
+
+	.icon {
+		color: $color-dark;
+		display: inline-block;
+		font-size: 24px;
+		stroke-width: 0;
+		stroke: currentColor;
+		fill: currentColor;
+		vertical-align: middle;
+
+		-webkit-transition: color .3s;
+		-moz-transition: color .3s;
+		-o-transition: color .3s;
+		transition: color .3s;
+		
+		&:hover {
+			color: $color-highlight;
+		}
+
+		&:first-child {
+			margin-right: 10px;
+		}
+		
+		&:last-child {
+		  	margin-left: 10px;
+		}
 	}
 
 
@@ -53,6 +84,13 @@ body.p01 {
 			color: $color-highlight;
 		}
 	}
+
+
+	.icon.icon-logo {
+		width: 138px;
+		height: 60px;
+	}
+
 
 	.branding {
 		background: url(../img/01bg.png) center no-repeat #555;
