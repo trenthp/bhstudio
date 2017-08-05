@@ -23,11 +23,11 @@ p {
 	font-size: 1.4rem;
 }
 
-nav h2 a {
+nav h1 a {
 	background: none;
 }
 
-nav h2 a img {
+nav h1 a img {
 	border: none;
 	color: $color-dark;
 	height: 60px;
@@ -58,16 +58,18 @@ header .landing {
 }
 
 .cta {
-	margin-top: 32px;
-	margin-bottom: 64px;
+	margin-top: 68px;
+	margin-bottom: 88px;
 }
 
 .ctabtn .btn {
 	color: $color-light;
 	background: none;
 	border: 2px solid $color-light;
+	font-family:$font-stack-secondary;
 	font-size: 1.25em;
-	padding: 12px 16px;
+	letter-spacing: 8px;
+	padding: 24px 32px;
 
 	-webkit-transition: background color .3s;
 	-moz-transition: background color .3s;
@@ -79,8 +81,14 @@ header .landing {
 	}
 }
 
+.headernav a h4:hover {
+	color: $color-highlight;
+	& .icon.icon-diamond {
+		color: $color-highlight;
+	}
+}
+
 .headernav a h4,
-.headernav a h5,
 .icon.icon-diamond {
 	color: $color-light;
 
@@ -88,14 +96,9 @@ header .landing {
 	-moz-transition: color .3s;
 	-o-transition: color .3s;
 	transition: color .3s;
-
-	&:hover {
-		color: $color-highlight;
-	}
 }
 
 .headernav h4,
-.headernav h5,
 .icon.icon-diamond {
 	color: #fff;
 	font-weight: 400;
@@ -103,18 +106,48 @@ header .landing {
 	text-align: center;
 }
 
+.headernav h4 {
+	font-size: 46px;
+	line-height: 46px;
+}
+
+.headernav h4 span {
+	font-style: normal;
+	font-size: 16px;
+	color: #fff;
+}
+
 .icon:last-child {
 	margin-left: none;
 }
 
+.headernav {
+	margin-bottom: -19px;
+}
+
 .diamondnav {
-    margin-top: 64px;
-    margin-bottom: 48px;
+    padding-top: 0px;
+    margin-bottom: 68px;
+    border-bottom: 1px solid #fff;
+    width: 100%;
+    text-align: center;
+}
+.diamondnav .row {
+	width: 75%;
+	margin: 0 auto;
 }
 
 @media (max-width: 1110px) {
 	.diamondnav {
 		display: none;
+	}
+}
+
+@media (max-width: 375px) {
+	.ctabtn .btn {
+		font-size: 1em;
+		letter-spacing: 6px;
+		padding: 12px 16px;
 	}
 }
 

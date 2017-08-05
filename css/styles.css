@@ -1239,10 +1239,10 @@ nav h2 a {
 p {
   font-size: 1.4rem; }
 
-nav h2 a {
+nav h1 a {
   background: none; }
 
-nav h2 a img {
+nav h1 a img {
   border: none;
   color: #3a3a3a;
   height: 60px;
@@ -1250,7 +1250,7 @@ nav h2 a img {
   -moz-transition: border color .3s;
   -o-transition: border color .3s;
   transition: border color .3s; }
-  nav h2 a img:hover {
+  nav h1 a img:hover {
     border: none;
     color: #DBA93A; }
 
@@ -1264,15 +1264,17 @@ header .landing {
   text-align: center; }
 
 .cta {
-  margin-top: 32px;
-  margin-bottom: 64px; }
+  margin-top: 68px;
+  margin-bottom: 88px; }
 
 .ctabtn .btn {
   color: #fff;
   background: none;
   border: 2px solid #fff;
+  font-family: "Karla", sans-serif;
   font-size: 1.25em;
-  padding: 12px 16px;
+  letter-spacing: 8px;
+  padding: 24px 32px;
   -webkit-transition: background color .3s;
   -moz-transition: background color .3s;
   -o-transition: background color .3s;
@@ -1280,37 +1282,60 @@ header .landing {
   .ctabtn .btn:hover {
     color: #DBA93A; }
 
+.headernav a h4:hover {
+  color: #DBA93A; }
+  .headernav a h4:hover .icon.icon-diamond {
+    color: #DBA93A; }
+
 .headernav a h4,
-.headernav a h5,
 .icon.icon-diamond {
   color: #fff;
   -webkit-transition: color .3s;
   -moz-transition: color .3s;
   -o-transition: color .3s;
   transition: color .3s; }
-  .headernav a h4:hover,
-  .headernav a h5:hover,
-  .icon.icon-diamond:hover {
-    color: #DBA93A; }
 
 .headernav h4,
-.headernav h5,
 .icon.icon-diamond {
   color: #fff;
   font-weight: 400;
   margin: auto;
   text-align: center; }
 
+.headernav h4 {
+  font-size: 46px;
+  line-height: 46px; }
+
+.headernav h4 span {
+  font-style: normal;
+  font-size: 16px;
+  color: #fff; }
+
 .icon:last-child {
   margin-left: none; }
 
+.headernav {
+  margin-bottom: -19px; }
+
 .diamondnav {
-  margin-top: 64px;
-  margin-bottom: 48px; }
+  padding-top: 0px;
+  margin-bottom: 68px;
+  border-bottom: 1px solid #fff;
+  width: 100%;
+  text-align: center; }
+
+.diamondnav .row {
+  width: 75%;
+  margin: 0 auto; }
 
 @media (max-width: 1110px) {
   .diamondnav {
     display: none; } }
+@media (max-width: 375px) {
+  .ctabtn .btn {
+    font-size: 1em;
+    letter-spacing: 6px;
+    padding: 12px 16px; } }
 /* Grid Section
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 h5 span {
